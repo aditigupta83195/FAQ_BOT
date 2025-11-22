@@ -1,0 +1,134 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family:'Poppins',sans-serif;
+  background:#000;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  height:100vh;
+  overflow:hidden;
+}
+
+/* Header Bar */
+header {
+  background:linear-gradient(135deg,#9d00ff,#6600cc);
+  text-align:center;
+  padding:15px;
+  font-size:1.6em;
+  font-weight:bold;
+  letter-spacing:1px;
+  color:#fff;
+}
+
+/* Main Layout */
+#container {
+  display:flex;
+  flex:1;
+  overflow:hidden;
+}
+
+/* Sidebar */
+#menu {
+  width:220px;
+  background:#0a0a0a;
+  border-right:2px solid #9d00ff;
+  padding:15px;
+  overflow-y:auto;
+}
+
+#menu button {
+  width:100%;
+  padding:12px;
+  margin-bottom:8px;
+  background:linear-gradient(135deg,#9d00ff,#7700dd);
+  border:none;
+  border-radius:8px;
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.personality-section {
+  margin-top:20px;
+  padding-top:10px;
+  border-top:1px solid #9d00ff;
+}
+
+#library p {
+  background:#1a1a1a;
+  margin:6px 0;
+  padding:10px;
+  border-left:3px solid #9d00ff;
+  border-radius:6px;
+}
+
+/* Chat Area */
+#chat-area {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  background:#0a0a0a;
+}
+
+#chat-box {
+  flex:1;
+  padding:20px;
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.message {
+  max-width:75%;
+  padding:12px;
+  border-radius:10px;
+  line-height:1.5;
+}
+
+.user {
+  background:linear-gradient(135deg,#9d00ff,#7700dd);
+  align-self:flex-end;
+}
+
+.bot {
+  background:#1a1a1a;
+  border-left:3px solid #9d00ff;
+  align-self:flex-start;
+}
+
+/* Input */
+#input-area {
+  padding:12px;
+  display:flex;
+  gap:10px;
+  border-top:2px solid #9d00ff;
+  background:#000;
+}
+
+#input {
+  flex:1;
+  padding:12px;
+  background:#1a1a1a;
+  border:1px solid #9d00ff;
+  border-radius:6px;
+  color:#fff;
+}
+
+#send {
+  padding:12px 20px;
+  border:none;
+  background:linear-gradient(135deg,#9d00ff,#7700dd);
+  color:#fff;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* Speaker Icon Button */
+.speak-btn {
+  margin-top:6px;
+  cursor:pointer;
+  color:#9d00ff;
+  font-size:1.1em;
+}

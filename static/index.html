@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>FAQ Assistant</header>
+
+<div id="container">
+
+    <div id="menu">
+        <button id="newChat">New Chat</button>
+
+        <div class="personality-section">
+            <label>Voice Output</label>
+            <select id="voiceToggle">
+                <option value="on">Enabled</option>
+                <option value="off">Disabled</option>
+            </select>
+        </div>
+
+        <div id="library"></div>
+    </div>
+
+    <div id="chat-area">
+        <div id="chat-box"></div>
+
+        <div id="input-area">
+            <input id="input" placeholder="Ask something..." />
+            <button id="send">Send</button>
+        </div>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
