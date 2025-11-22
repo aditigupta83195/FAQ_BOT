@@ -1,5 +1,5 @@
-from flask import Flask, request, jsonify, send_from_directory
-from faq_data import FAQ_DATA, model
+from flask import Flask,request,jsonify,send_from_directory
+from faq_data import FAQ_DATA,model
 from smalltalk import SMALLTALK
 import numpy as np
 

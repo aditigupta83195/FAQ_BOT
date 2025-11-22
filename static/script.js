@@ -19,7 +19,6 @@ function addMessage(text, sender, save = true) {
     msg.classList.add("message", sender);
     msg.innerHTML = text;
 
-    // speaker icon for bot messages
     if (sender === "bot") {
         const btn = document.createElement("div");
         btn.classList.add("speak-btn");
@@ -66,7 +65,6 @@ async function handleSend() {
     const reply = await sendToBackend(msg);
     addMessage(reply, "bot");
 
-    // auto play voice if enabled
     if (document.getElementById("voiceToggle").value === "on") {
         speakMessage(reply);
     }
