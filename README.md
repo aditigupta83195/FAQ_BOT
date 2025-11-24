@@ -47,7 +47,7 @@ Browser DevTools
 
 INSTALLATION AND SETUP
 1.Clone the Repository
-git clone <your-repo-url>
+git clone <https://github.com/aditigupta83195/FAQ_BOT.git>
 cd <project-folder>
 2.Install Required Python Packages
 pip install flask sentence-transformers numpy
