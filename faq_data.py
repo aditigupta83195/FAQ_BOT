@@ -6,7 +6,7 @@ model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
 FAQ_DATA = [
 
-  # --- ABOUT ---
+  
   { "q": "What is ShopNest?", 
     "a": "ShopNest is an online shopping marketplace offering electronics, fashion, home essentials, groceries, and more with fast delivery." },
 
@@ -16,7 +16,7 @@ FAQ_DATA = [
   { "q": "Do you have a mobile app?", 
     "a": "Yes, the ShopNest app is available on both Android and iOS devices." },
 
-  # --- ACCOUNT ---
+  
   { "q": "How do I create an account?", 
     "a": "Click the Sign Up button, enter your email or mobile number, create a password, and verify your details." },
 
@@ -29,7 +29,7 @@ FAQ_DATA = [
   { "q": "Can I have multiple delivery addresses?", 
     "a": "Yes, you can save multiple addresses and choose one during checkout." },
 
-  # --- ORDERS ---
+  
   { "q": "How do I track my order?", 
     "a": "Go to My Orders → Select the item → Track Order to see real-time delivery updates." },
 
@@ -42,7 +42,7 @@ FAQ_DATA = [
   { "q": "My order shows delivered but I didn’t receive it", 
     "a": "Check with neighbors or security. If still not found, contact support for assistance." },
 
-  # --- PAYMENTS ---
+  
   { "q": "What payment methods do you accept?", 
     "a": "ShopNest accepts credit/debit cards, UPI, net banking, cash on delivery, and digital wallets." },
 
@@ -55,7 +55,7 @@ FAQ_DATA = [
   { "q": "Are my payment details secure?", 
     "a": "Yes, we use encrypted & PCI-compliant systems for secure transactions." },
 
-  # --- SHIPPING ---
+  
   { "q": "How long does delivery take?", 
     "a": "Most orders are delivered within 1–5 business days depending on your location." },
 
@@ -68,7 +68,7 @@ FAQ_DATA = [
   { "q": "Can I schedule my delivery?", 
     "a": "Yes, scheduled delivery is available for selected appliances and large items." },
 
-  # --- RETURNS & REFUNDS ---
+  
   { "q": "What is your return policy?", 
     "a": "Most items can be returned within 7–10 days of delivery if unused and in original packaging." },
 
@@ -84,7 +84,7 @@ FAQ_DATA = [
   { "q": "What items are not eligible for return?", 
     "a": "Some items like innerwear, perishable goods, and digital products are non-returnable." },
 
-  # --- SELLER / MARKETPLACE ---
+
   { "q": "How do I become a seller on ShopNest?", 
     "a": "You can register as a seller by visiting shopnest.com/sell and completing the signup form." },
 
@@ -94,7 +94,7 @@ FAQ_DATA = [
   { "q": "How do sellers get paid?", 
     "a": "Seller earnings are transferred weekly to their registered bank account." },
 
-  # --- PRODUCT RELATED ---
+  
   { "q": "Are all products on ShopNest original?", 
     "a": "Yes, we guarantee authenticity for all products sold by verified sellers." },
 
@@ -104,7 +104,7 @@ FAQ_DATA = [
   { "q": "Can I request a demo or installation?", 
     "a": "Yes, demo and installation services are available for appliances and TVs." },
 
-  # --- PRIME / MEMBERSHIP ---
+  
   { "q": "What is ShopNest Plus?", 
     "a": "ShopNest Plus is a premium membership offering free delivery, deals, and exclusive rewards." },
 
@@ -114,7 +114,7 @@ FAQ_DATA = [
   { "q": "Do Plus members get faster delivery?", 
     "a": "Yes, Plus members get free & priority delivery benefits." },
 
-  # --- CUSTOMER SUPPORT ---
+  
   { "q": "How do I contact customer support?", 
     "a": "You can contact support via chat, email, or the helpline number available in the Help Center." },
 
@@ -124,7 +124,7 @@ FAQ_DATA = [
   { "q": "How long does it take to resolve an issue?", 
     "a": "Most issues are resolved within 24–48 hours depending on complexity." },
 
-  # --- SECURITY & PRIVACY ---
+  
   { "q": "Is my personal information secure?", 
     "a": "Yes, we use encryption and strict privacy practices to keep your data safe." },
 
@@ -134,20 +134,20 @@ FAQ_DATA = [
   { "q": "How can I delete my account?", 
     "a": "Go to Account → Security Settings → Delete Account and follow the steps." },
 
-  # --- OFFERS & COUPONS ---
+  
   { "q": "How do I apply a coupon?", 
     "a": "Enter your coupon code on the checkout page before making payment." },
 
   { "q": "Why is my coupon not working?", 
     "a": "Some coupons have usage limits, apply only to specific categories, or may be expired." },
 
-  # --- GROCERY / DAILY ESSENTIALS ---
+  
   { "q": "Do you deliver groceries?", 
     "a": "Yes, groceries and household essentials are available with fast delivery." },
 
   { "q": "Is fresh produce available?", 
     "a": "Yes, fresh fruits, vegetables, and dairy are available in select locations." }
 ]
-# Convert all FAQ questions into embeddings
+
 for item in FAQ_DATA:
     item["embedding"] = model.encode(item["q"]).tolist()

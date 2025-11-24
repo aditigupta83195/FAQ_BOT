@@ -8,12 +8,12 @@ app = Flask(__name__, static_folder="static")
 def find_semantic_answer(question):
     q = question.lower().strip()
 
-    # 1. Smalltalk check first
+    
     for key in SMALLTALK:
         if key in q:
             return SMALLTALK[key]
 
-    # 2. Semantic search
+   
     question_emb = model.encode(question)
     best_score = -1
     best_answer = None
@@ -28,7 +28,7 @@ def find_semantic_answer(question):
             best_score = score
             best_answer = item["a"]
 
-    # Lowered threshold for better matching
+    
     if best_score > 0.40:
         return best_answer
 

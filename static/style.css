@@ -10,7 +10,7 @@ body {
   overflow:hidden;
 }
 
-/* Header Bar */
+
 header {
   background:linear-gradient(135deg,#9d00ff,#6600cc);
   text-align:center;
@@ -21,14 +21,14 @@ header {
   color:#fff;
 }
 
-/* Main Layout */
+
 #container {
   display:flex;
   flex:1;
   overflow:hidden;
 }
 
-/* Sidebar */
+
 #menu {
   width:220px;
   background:#0a0a0a;
@@ -63,7 +63,7 @@ header {
   border-radius:6px;
 }
 
-/* Chat Area */
+
 #chat-area {
   flex:1;
   display:flex;
@@ -98,7 +98,7 @@ header {
   align-self:flex-start;
 }
 
-/* Input */
+
 #input-area {
   padding:12px;
   display:flex;
@@ -125,7 +125,7 @@ header {
   cursor:pointer;
 }
 
-/* Speaker Icon Button */
+
 .speak-btn {
   margin-top:6px;
   cursor:pointer;

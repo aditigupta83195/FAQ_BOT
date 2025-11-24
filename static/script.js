@@ -1,17 +1,17 @@
-// Chat history is stored locally so it reloads after refresh
+
 let chatHistory = JSON.parse(localStorage.getItem("chatHistory")) || [];
 
-// This loads chat history onto the screen when page opens
+
 window.onload = () => {
     chatHistory.forEach(msg => addMessage(msg.text, msg.sender, false));
 };
 
-// Save chat messages to localStorage
+
 function saveHistory() {
     localStorage.setItem("chatHistory", JSON.stringify(chatHistory));
 }
 
-// Adds message to chat window
+
 function addMessage(text, sender, save = true) {
     const box = document.getElementById("chat-box");
 
@@ -36,7 +36,7 @@ function addMessage(text, sender, save = true) {
     }
 }
 
-// Sends message to Python backend
+
 async function sendToBackend(userMsg) {
     const res = await fetch("/ask", {
         method: "POST",
@@ -48,7 +48,7 @@ async function sendToBackend(userMsg) {
     return data.answer;
 }
 
-// Handles send button click
+
 document.getElementById("send").onclick = handleSend;
 document.getElementById("input").addEventListener("keypress", e => {
     if (e.key === "Enter") handleSend();
@@ -70,7 +70,7 @@ async function handleSend() {
     }
 }
 
-// Text-to-Speech function
+
 function speakMessage(text) {
     const voiceSetting = document.getElementById("voiceToggle").value;
     if (voiceSetting === "off") return;
@@ -83,7 +83,7 @@ function speakMessage(text) {
     window.speechSynthesis.speak(speak);
 }
 
-// Clears chat history
+
 document.getElementById("newChat").onclick = () => {
     localStorage.removeItem("chatHistory");
     document.getElementById("chat-box").innerHTML = "";
