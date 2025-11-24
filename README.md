@@ -1,57 +1,71 @@
-<<<<<<< HEAD
+<h1 align="center">🤖 CSE Project – Semantic FAQ Chatbot</h1>
 
-=======
-CSE Project- FAQ Chatbot
-OVERVEW
-This project implements a semantic FAQ chatbot capable of understanding user queries by meaning rather than exact wording. The system uses sentence embeddings to identify the closest FAQ entry and returns the most relevant answer. It includes a responsive web interface, a Python Flask backend, and a lightweight transformer model for efficient semantic similarity checks.
+<p align="center">
+A lightweight, semantic-search powered FAQ chatbot built using Flask, Sentence Transformers, and a responsive web UI.
+</p>
 
-FEATURES
+<hr>
 
-1.Semantic Search: Matches meaningfully similar questions using sentence embeddings.
+<h2>🌟 <strong>Overview</strong></h2>
+<p>
+This project implements a <strong>semantic FAQ chatbot</strong> capable of understanding user queries by meaning rather than exact wording.  
+It uses <strong>sentence embeddings</strong> to identify the closest FAQ entry, supports small-talk detection, and includes a clean, interactive frontend.
+</p>
 
-2.Smalltalk Handling: Responds to common greetings and brief conversational messages.
+<hr>
 
-3.Interactive Chat UI: Smooth message display with typing indicators.
+<h2>🚀 <strong>Features</strong></h2>
+<ul>
+  <li><strong>Semantic Search</strong>: Matches meaningfully similar questions using sentence embeddings.</li>
+  <li><strong>Smalltalk Handling</strong>: Responds to greetings and simple conversational inputs.</li>
+  <li><strong>Interactive Chat UI</strong>: Smooth animations, typing indicators, and clean message layout.</li>
+  <li><strong>Fast & Lightweight</strong>: Runs without GPU and responds quickly.</li>
+  <li><strong>Modular Codebase</strong>: Clear separation of backend, FAQ logic, and UI.</li>
+  <li><strong>Fallback System</strong>: Friendly message returned when no relevant FAQ is found.</li>
+</ul>
 
-4.Fast & Lightweight: Works without GPU and responds quickly.
+<hr>
 
-5.Modular Codebase: Clear separation of backend, embeddings, FAQ data, and frontend logic.
+<h2>🛠 <strong>Technologies / Tools Used</strong></h2>
 
-6.Fallback System: Displays a friendly message when no FAQ match is found.
+<h3>Backend:</h3>
+<ul>
+  <li>Python 3.x</li>
+  <li>Flask</li>
+  <li>Sentence Transformers</li>
+  <li>NumPy</li>
+</ul>
 
-TECHNOLOGIES / TOOLS USED
+<h3>Frontend:</h3>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript (Fetch API)</li>
+</ul>
 
-Backend:-
+<h3>Development Tools:</h3>
+<ul>
+  <li>VS Code</li>
+  <li>Browser DevTools</li>
+</ul>
 
-Python 3.x
+<hr>
 
-Flask
+<h2>📦 <strong>Installation & Setup</strong></h2>
 
-Sentence Transformers
-
-NumPy
-
-Frontend:-
-
-HTML
-
-CSS
-
-JavaScript (Fetch API)
-
-Development Tools:-
-
-VS Code
-
-Browser DevTools
-
-INSTALLATION AND SETUP<br>
-1.Clone the Repository<br>
-`git clone <https://github.com/aditigupta83195/FAQ_BOT.git>`
+<h3>1️⃣ Clone the Repository</h3>
+<pre>
+git clone https://github.com/aditigupta83195/FAQ_BOT.git
 cd cse project
-2.Install Required Python Packages
+</pre>
+
+<h3>2️⃣ Install Required Packages</h3>
+<pre>
 pip install flask sentence-transformers numpy
-3.Project Structure
+</pre>
+
+<h3>3️⃣ Project Structure</h3>
+<pre>
 cse project/
 │
 ├── app.py
@@ -62,58 +76,72 @@ cse project/
     ├── index.html
     ├── style.css
     └── script.js
-4.Run the Flask Server
+</pre>
+
+<h3>4️⃣ Run the Flask Server</h3>
+<pre>
 python app.py
-5.Open the Application
-Visit the following URL in your browser:
-http://127.0.0.1:5000/
+</pre>
 
-TESTING INSTRUCTIONS
-✔ Test FAQ Matching
+<h3>5️⃣ Open in Browser</h3>
+<p>Visit: <strong>http://127.0.0.1:5000/</strong></p>
 
-Try questions such as:
+<hr>
 
-“Refund timeline?”
+<h2>🧪 <strong>Testing Instructions</strong></h2>
 
-“How long does a refund take?”
+<h3>✔ FAQ Matching</h3>
+<ul>
+  <li>"Refund timeline?"</li>
+  <li>"How long does a refund take?"</li>
+  <li>"When will I receive my refund?"</li>
+</ul>
 
-“When will I receive my refund?”
+<h3>✔ Smalltalk</h3>
+<ul>
+  <li>"Hi"</li>
+  <li>"Thank you"</li>
+  <li>"How are you?"</li>
+</ul>
 
-All should give the same answer.
+<h3>✔ Unknown Questions</h3>
+<ul>
+  <li>"How to cook pasta?"</li>
+  <li>"Explain quantum theory."</li>
+</ul>
 
-✔ Test Smalltalk
+<h3>✔ Backend Connectivity</h3>
+<ul>
+  <li>Open Browser → Inspect → Network → Verify <code>/ask</code> API calls.</li>
+</ul>
 
-Examples:
+<hr>
 
-“Hi”
+<h2>📸 <strong>Screenshots</strong></h2>
 
-“Thank you”
+<img width="1917" height="906" alt="chatb"
+src="https://github.com/user-attachments/assets/cc0f2465-c287-4bfc-99ec-382a694a05d0" />
 
-“How are you?”
+<br><br>
 
-✔ Test Unknown Questions
+<img width="1912" height="303" alt="chatb1"
+src="https://github.com/user-attachments/assets/0161248d-c143-47ae-9c36-80e09f09270b" />
 
-Try:
+<br><br>
 
-“How to cook pasta?”
+<img width="1908" height="253" alt="chatb2"
+src="https://github.com/user-attachments/assets/56bd5e1b-c87f-4bed-9000-dbd3fb8ef18a" />
 
-“Explain quantum theory.”
+<br><br>
 
-These should trigger the fallback response.
+<img width="1902" height="261" alt="chatb3"
+src="https://github.com/user-attachments/assets/ec9ca0cc-8b7d-47b1-ae27-40957cceaf10" />
 
-✔ Test Backend Connectivity
+<br><br>
 
-Open browser → Inspect → Network → Verify /ask API calls.
+<img width="1916" height="332" alt="chatb4"
+src="https://github.com/user-attachments/assets/f9df7c76-ffa1-42bc-b53b-bd7416e76b9c" />
 
-SCREENSHOTS
+<hr>
 
-<img width="1917" height="906" alt="chatb" src="https://github.com/user-attachments/assets/cc0f2465-c287-4bfc-99ec-382a694a05d0" />
-
-<img width="1912" height="303" alt="chatb1" src="https://github.com/user-attachments/assets/0161248d-c143-47ae-9c36-80e09f09270b" />
-
-<img width="1908" height="253" alt="chatb2" src="https://github.com/user-attachments/assets/56bd5e1b-c87f-4bed-9000-dbd3fb8ef18a" />
-
-<img width="1902" height="261" alt="chatb3" src="https://github.com/user-attachments/assets/ec9ca0cc-8b7d-47b1-ae27-40957cceaf10" />
-
-<img width="1916" height="332" alt="chatb4" src="https://github.com/user-attachments/assets/f9df7c76-ffa1-42bc-b53b-bd7416e76b9c" />
->>>>>>> cd1afe31a41d2fe79748fecdd65a5fa151cc8e45
+<h2 align="center">🎉 Thank You for Using the Semantic FAQ Chatbot!</h2>
