@@ -1,12 +1,12 @@
-FAQ CHATBOT
+<h1>FAQ CHATBOT</h1>
 
-PROBLEM STATEMENT
+<h2>PROBLEM STATEMENT</h2>
 
 Modern websites often receive repetitive customer queries related to orders, payments, returns, account issues, and general support. Handling these manually increases support workload and delays response time. Traditional keyword-based chatbots fail to understand variations in user phrasing, leading to inaccurate or irrelevant answers.
 
 This project aims to develop an intelligent FAQ chatbot that uses semantic search to understand the meaning of user questions and deliver the most appropriate responses from a predefined FAQ dataset.
 
- SCOPE OF THE PROJECT
+ <h2>SCOPE OF THE PROJECT</h2>
 
 The scope of this project includes:
 
@@ -32,7 +32,7 @@ Database storage
 
 Voice input or real-time chat support
 
- TARGET USERS
+ <h2>TARGET USERS</h2>
 
 The primary users of this system are:
 
@@ -44,7 +44,7 @@ Businesses wanting to automate FAQ handling
 
 Students or developers studying chatbot and NLP concepts
 
- HIGH-LEVEL FEATURES
+ <h2>HIGH-LEVEL FEATURES</h2>
 
 Semantic FAQ Matching: Identifies the closest FAQ using sentence embeddings.
 
@@ -57,3 +57,4 @@ Lightweight Architecture: Uses local embeddings without external APIs.
 Fallback Response System: Handles unmatched queries gracefully.
 
 Modular Code Design: FAQ data, embeddings, NLP logic, and UI kept separate.
+
