@@ -45,14 +45,14 @@ VS Code
 
 Browser DevTools
 
-INSTALLATION AND SETUP
+INSTALLATION AND SETUP<br>
 1.Clone the Repository
-git clone <https://github.com/aditigupta83195/FAQ_BOT.git>
-cd <project-folder>
+`git clone <https://github.com/aditigupta83195/FAQ_BOT.git>`
+cd cse project
 2.Install Required Python Packages
 pip install flask sentence-transformers numpy
 3.Project Structure
-project/
+cse project/
 │
 ├── app.py
 ├── faq_data.py
