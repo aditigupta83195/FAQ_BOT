@@ -46,7 +46,7 @@ VS Code
 Browser DevTools
 
 INSTALLATION AND SETUP<br>
-1.Clone the Repository
+1.Clone the Repository<br>
 `git clone <https://github.com/aditigupta83195/FAQ_BOT.git>`
 cd cse project
 2.Install Required Python Packages
